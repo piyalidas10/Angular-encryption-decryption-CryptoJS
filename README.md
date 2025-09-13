@@ -27,61 +27,61 @@ npm install - save-dev @types/crypto-js
 
 
 ## Realtime Scenarios for Encryption & Decryption
-🔐 1. Authentication & Login Systems
+🔐 1. Authentication & Login Systems    
 Scenario: When a user logs into a banking or e-commerce app.
 Usage:
     -   Passwords are encrypted (hashed + salted) before storage.
     -   During login, the entered password is encrypted in the same way and compared with the stored hash.
 
-📧 2. Secure Communication (Emails, Messaging Apps)
+📧 2. Secure Communication (Emails, Messaging Apps)     
 Scenario: Sending confidential information via Gmail, WhatsApp, or Signal.
 Usage:
     -   Messages are encrypted end-to-end, so only the sender and receiver can decrypt them.
     -   Even service providers cannot read the content.
 
-💳 3. Payment Transactions
+💳 3. Payment Transactions      
 Scenario: Making an online purchase with a credit card.
 Usage:
     -   Card details are encrypted before being sent to the payment gateway.
     -   The payment gateway decrypts it to process the transaction securely.
 
-🏥 4. Healthcare Data Protection (HIPAA Compliance)
+🏥 4. Healthcare Data Protection (HIPAA Compliance)     
 Scenario: Hospitals storing patient health records in the cloud.
 Usage:
     -   Patient data is encrypted before being stored.
     -   Only authorized doctors with decryption keys can view the records.
 
-☁️ 5. Cloud Storage & File Sharing
+☁️ 5. Cloud Storage & File Sharing      
 Scenario: Uploading files to Google Drive, Dropbox, or OneDrive.
 Usage:
     -   Files are encrypted before upload.
     -   When downloaded, the files are decrypted for the user.
 
-🏦 6. Banking & Financial Applications
+🏦 6. Banking & Financial Applications      
 Scenario: Accessing net banking or mobile banking apps.
 Usage:
     -   Sensitive data like OTP, account number, and transactions are encrypted during transmission.
     -   Banks decrypt the information securely on their servers.
 
-🌍 7. VPNs & Secure Browsing
+🌍 7. VPNs & Secure Browsing        
 Scenario: Accessing a website using HTTPS or a VPN.
 Usage:
     -   Data between browser and server is encrypted using SSL/TLS.
     -   Prevents hackers from intercepting login details or sensitive info.
 
-🏢 8. Enterprise Applications
+🏢 8. Enterprise Applications       
 Scenario: Internal communication in a company (Slack, Teams, internal APIs).
 Usage:
     -   API payloads are encrypted before sending over the network.
     -   The receiving system decrypts them for further processing.
 
-📱 9. Mobile Apps (Offline Data Security)
+📱 9. Mobile Apps (Offline Data Security)       
 Scenario: A mobile banking app storing transaction history offline.
 Usage:
     -   Data stored in local storage/SQLite is encrypted.
     -   Only the app (with keys) can decrypt it, not other malicious apps.
 
-🛂 10. Government & Defense
+🛂 10. Government & Defense     
 Scenario: Sending classified military or diplomatic documents.
 Usage:
     -   Data is encrypted using advanced algorithms (AES, RSA).
