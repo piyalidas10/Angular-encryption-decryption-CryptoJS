@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
@@ -9,4 +10,13 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'Angular-CryptoJS';
+
+  constructor(private http: HttpClient) {}
+
+  send() {
+    const payload = { username: 'piyali', password: 'mypassword' };
+    this.http.post('/api/secure-endpoint', payload).subscribe(res => {
+      console.log('Response:', res);
+    });
+  }
 }
